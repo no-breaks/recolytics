@@ -1,0 +1,48 @@
+# =============== BUILD DIRECTORIES ===============
+target/
+build/
+!**/src/main/**/target/
+!**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# =============== MAVEN WRAPPER ===============
+!.mvn/wrapper/maven-wrapper.jar
+
+# =============== IDE CONFIGS ===============
+
+## IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+## Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+## NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+## VS Code
+.vscode/
+
+# =============== OS FILES ===============
+.DS_Store
+Thumbs.db
+
+# =============== SECURITY & CONFIG FILES ===============
+# Prevent committing sensitive properties
+src/main/resources/application-sample.properties
+
+# But allow a clean example for devs
+!src/main/resources/application-sample.properties
